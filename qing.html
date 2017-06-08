@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/zhiyuan.css" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="zhezhao">
+			<div class="qing">
+				
+				<div class="top">
+					<a href="">  确  定  清  楚  缓  存  ？</a>
+				</div>
+				
+				<div class="bottom">
+					<p><a href="she.html">取消</a></p>
+					<span><a href="">确定</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="containere">
+			<header>
+				<p>
+					<a href="my.html"><img src="img/images/返回(1).png" /></a>
+				</p>
+				<span><a href="">设置</a></span>
+			</header>
+			<section>
+				<div class="center">
+
+					<p>
+						<a href="">密码设置</a>
+					</p>
+					<span><img src="img/返回-副本-2.png"/></span>
+				</div>
+				<div class="center">
+
+					<p>
+						<a href="">服务协议</a>
+					</p>
+					<span><img src="img/返回-副本-2.png"/></span>
+				</div>
+				<div class="center">
+
+					<p>
+						<a href="">清除缓存</a>
+					</p>
+					<span><img src="img/返回-副本-2.png"/></span>
+				</div>
+				<div class="botton">
+
+					<p>
+						<a href="">系统消息</a>
+					</p>
+					<span><a href="">V 4.7.1</a></span>
+				</div>
+
+			</section>
+			<footer>
+				<div class="tui">
+					<a href="">退出登录</a>
+				</div>
+			</footer>
+		</div>
+
+	</body>
+
+</html>

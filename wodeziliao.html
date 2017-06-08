@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/zhiyuan.css" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="containere">
+			<header>
+				<p>
+					<a href="my.html"><img src="img/images/返回(1).png" /></a>
+				</p>
+				<span><a href="">我的资料</a></span>
+			</header>
+			<section>
+				<div class="center-zi">
+
+					<p>
+						<a href="">头像</a>
+					</p>
+					<span><a href="wdzl-tou.html"><img src="img/quan.png"/></a></span>
+				</div>
+				<div class="botton-zi">
+
+					<p>
+						<a href="">昵称</a>
+					</p>
+					<span><a href="">昵称</a></span>
+				</div>
+				<div class="botton-zi">
+
+					<p>
+						<a href="">性别</a>
+					</p>
+					<span><a href="">性别</a></span>
+				</div>
+				<div class="botton-zi">
+
+					<p>
+						<a href="">生日</a>
+					</p>
+					<span><a href="">生日</a></span>
+				</div>
+				<div class="botton-zi">
+
+					<p>
+						<a href="">地区</a>
+					</p>
+					<span><a href="">直辖市                   北京</a></span>
+				</div>
+				<div class="botton-zi">
+
+					<p>
+						<a href="">个性签名</a>
+					</p>
+					<span><a href="">疯狂淘大奖</a></span>
+				</div>
+				
+				
+				<div class="center">
+
+					<p>
+						<a href="">更改手机号</a>
+					</p>
+					<span><img src="img/返回-副本-2.png"/></span>
+				</div>
+			</section>
+			<footer>
+				
+			</footer>
+		</div>
+
+	</body>
+
+</html>

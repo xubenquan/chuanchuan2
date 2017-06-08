@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/zhiyuan.css" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="containere">
+			<header>
+				<p>
+					<a href="she.html"><img src="img/images/返回(1).png" /></a>
+				</p>
+				<span><a href="">设置密码</a></span>
+			</header>
+			<section>
+				<div class="wen">
+					<p>请设置传传密码，你可以用传传绑定的<a href="">账号+传传密码</a>登录，比如使用<a href="">手机号+传传密码</a>登录</p>
+				</div>
+				
+				
+				<div class="center1">
+
+					<p>
+						<a href="">传传账号</a>
+						XUBENQUAN666
+					</p>
+					
+				</div>
+				<div class="center2">
+
+					<p>
+						<a href="">密码</a>
+						<input type="password" placeholder="请填写新密码" />
+						
+					</p>
+					
+				</div>
+				<div class="center3">
+
+					<p>
+						<a href="">确认密码</a>
+						<input type="password" placeholder="请再次填写确认" />
+						
+					</p>
+					
+				</div>
+				
+
+			</section>
+			<footer>
+				<div class="tui">
+					<a href="genggai.html">确定</a>
+				</div>
+			</footer>
+		</div>
+
+	</body>
+
+</html>
